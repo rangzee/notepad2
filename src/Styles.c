@@ -2545,7 +2545,8 @@ static PEDITLEXER Style_GetLexerFromFile(LPCWSTR lpszFile, BOOL bCGIGuess, LPCWS
 			} else if (StrCaseEqual(lpszName, L"LLVMBuild.txt")) {
 				pLexNew = &lexINI;
 			} else {
-				pLexNew = &lexTextFile;
+				// pLexNew = &lexTextFile;
+				bFound = FALSE;
 			}
 		}
 
